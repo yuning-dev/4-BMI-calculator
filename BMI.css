@@ -13,6 +13,23 @@ p {
     text-align: center;
 }
 
+button {
+    font-weight: bold;
+    background: rgb(250, 248, 233);
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+button:focus {
+    background: rgb(250, 238, 148);
+}
+
+#weightText {
+    padding-top: 30px;
+}
+
 .input {
     text-align: center;
 }

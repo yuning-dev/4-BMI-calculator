@@ -6,17 +6,19 @@
 <body>
     <h1>Welcome to our friendly neighbourhood BMI calculator!</h1>
     <h2>Do you think you may be fat? No need to sweat over it anymore! Find out for free below:</h2>
-    <p>Enter your weight here (in kilograms):</p>
+    <p>Click <button onclick = "calculateBMIImperial()">here</button> if you would prefer to enter the information in imperial units instead. 
+        Click <button onclick = "window.location.reload()">here</button> to go back to metric units.</p>
+    <p id = "weightText">Enter your weight here (in kilograms):</p>
     <div class = "input">
         <input type = "text" name = "weight" id = "weight" />
     </div>
     <br>
-    <p>Enter your height here (in meters):</p>
+    <p id = "heightText">Enter your height here (in meters):</p>
     <div class = "input">
         <input type= "text" name = "height" id = "height" />
     </div>
     <div class = "submit">
-        <input type = "submit" name = "submit" onclick="calculateBMI()"/>
+        <input type = "submit" name = "submit" onclick="calculateBMIDef()"/>
     </div>
 </body>
 <script src = "BMI.js"></script>

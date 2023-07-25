@@ -1,4 +1,4 @@
-function calculateBMI() {
+function calculateBMIDef() {
     var userWeight = document.getElementById("weight").value
     var userHeight = document.getElementById("height").value
 
@@ -15,4 +15,11 @@ function calculateBMI() {
     else {
         alert("You are obese. Please check out one of our tailored diet plans. If you would like to contact one of our specialists, here's a 15% voucher for the first 3 sessions.")
     }
+}
+
+function calculateBMIImperial() {
+    var difWeightText = document.getElementById("weightText")
+    difWeightText.innerText = "Enter your weight here (in pounds):"
+    var difHeightText = document.getElementById("heightText")
+    difHeightText.innerText = "Enter your height here (in inches):"
 }
