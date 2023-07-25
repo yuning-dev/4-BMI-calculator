@@ -26,6 +26,15 @@ button:focus {
     background: rgb(250, 238, 148);
 }
 
+.radio {
+    text-align: center;
+    font-weight: bold;
+}
+
+[type = "radio"] {
+    margin-right: 5px;
+}
+
 #weightText {
     padding-top: 30px;
 }
