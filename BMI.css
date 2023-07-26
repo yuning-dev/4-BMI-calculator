@@ -1,6 +1,12 @@
 * {
     background: rgb(252, 243, 252);
-    font-family:'Courier New', Courier, monospace
+    font-family:'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+body {
+    width: 75%;
+    margin: auto;
 }
 
 h1, h2 {
@@ -9,12 +15,10 @@ h1, h2 {
 }
 
 p {
-    font-weight: bold;
     text-align: center;
 }
 
 button {
-    font-weight: bold;
     background: rgb(250, 248, 233);
 }
 
@@ -28,7 +32,6 @@ button:focus {
 
 .radio {
     text-align: center;
-    font-weight: bold;
 }
 
 [type = "radio"] {
@@ -54,18 +57,38 @@ button:focus {
     display: inline;
 }
 
-.submit {
+#submit {
     text-align: center;
     margin-top: 40px;
 }
 
 [type = "submit"] {
     background: rgb(236, 255, 250);
-    font-weight: bold;
     font-size: 16px;
     padding: 8px;
 }
 
 [type = "submit"]:hover {
     cursor: pointer;
+}
+
+#result {
+    text-align: center;
+    margin-top: 35px;
+}
+
+.underweightResult {
+    color: rgb(250, 96, 191);
+}
+
+.normalWeightResult {
+    color: rgb(50, 179, 50);
+}
+
+.overweightResult {
+    color: rgb(255, 140, 0);
+}
+
+.obeseResult {
+    color: orangered;
 }
