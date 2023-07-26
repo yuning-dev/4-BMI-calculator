@@ -35,12 +35,23 @@ button:focus {
     margin-right: 5px;
 }
 
+.requestWH {
+    text-align: center;
+    margin-top: 35px;
+}
+
 #weightText {
     padding-top: 30px;
+    display: inline;
+}
+
+#heightText {
+    display: inline;
 }
 
 .input {
     text-align: center;
+    display: inline;
 }
 
 .submit {

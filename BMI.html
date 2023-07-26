@@ -8,17 +8,21 @@
     <h2>Do you think you may be fat? No need to sweat over it anymore! Find out for free below:</h2>
     <p>First choose which unit system you'd like to use:</p>
     <div class = "radio">
-        <input type = "radio" name = "chosenUnitSystem" value = "metric" id = "metric" onclick = "addMetricText()" />Metric system
+        <input type = "radio" name = "chosenUnitSystem" value = "metric" id = "metric" onclick = "addMetricText()" checked = "true" />Metric system
         <input type = "radio" name = "chosenUnitSystem" value = "imperial" id = "imperial" onclick = "addImperialText()" />Imperial system
     </div>
-    <p id = "weightText">Enter your weight here:</p>
-    <div class = "input">
-        <input type = "text" name = "weight" id = "weight" />
+    <div class = "requestWH">
+        <p id = "weightText">Enter your weight here (in kilograms):</p>
+        <div class = "input">
+            <input type = "text" name = "weight" id = "weight" />
+        </div>
+        <br>
     </div>
-    <br>
-    <p id = "heightText">Enter your height here:</p>
-    <div class = "input">
-        <input type= "text" name = "height" id = "height" />
+    <div class = "requestWH">
+        <p id = "heightText">Enter your height here (in meters):</p>
+        <div class = "input">
+            <input type= "text" name = "height" id = "height" />
+        </div>
     </div>
     <div class = "submit">
         <input type = "submit" name = "submit" onclick="unitChoice()"/>
