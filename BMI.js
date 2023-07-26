@@ -26,15 +26,27 @@ function calculateBMI(scalingFactor) {
 
     var BMI = scalingFactor * userWeight / (userHeight * userHeight)
     if (BMI < 18.5) {
-        alert("You are underweight. Please consider one of our tailored diet plans.")
+        var div = document.createElement("div")
+        var divText = document.createTextNode("You are underweight. Please consider one of our tailored diet plans.")
+        div.appendChild(divText)
+        document.getElementById("submit").appendChild(div)
     }
     else if (BMI < 25) {
-        alert("You have a healthy weight. Keep up!")
+        var div = document.createElement("div")
+        var divText = document.createTextNode("You have a healthy weight. Keep up!")
+        div.appendChild(divText)
+        document.getElementById("submit").appendChild(div)
     }
     else if (BMI < 30) {
-        alert("You are overweight. Please consider one of our tailored diet plans.")
+        var div = document.createElement("div")
+        var divText = document.createTextNode("You are overweight. Please consider one of our tailored diet plans.")
+        div.appendChild(divText)
+        document.getElementById("submit").appendChild(div)
     }
     else {
-        alert("You are obese. Please check out one of our tailored diet plans. If you would like to contact one of our specialists, here's a 15% voucher for the first 3 sessions.")
+        var div = document.createElement("div")
+        var divText = document.createTextNode("You are obese. Please check out one of our tailored diet plans. If you would like to contact one of our specialists, here's a 15% voucher for the first 3 sessions.")
+        div.appendChild(divText)
+        document.getElementById("submit").appendChild(div)
     }
 }
