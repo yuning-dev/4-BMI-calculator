@@ -26,23 +26,21 @@ function calculateBMI(scalingFactor) {
 
     var BMI = scalingFactor * userWeight / (userHeight * userHeight)
     if (BMI < 18.5) {
-        var resultDiv = document.getElementById("result")
-        resultDiv.innerText = "You are underweight. Please consider one of our tailored diet plans."
-        resultDiv.className = "underweightResult"
+        setResultText(String.fromCodePoint(0x26A0) + " " + "You are underweight. Please consider one of our tailored diet plans.", "underweightResult")
     }
     else if (BMI < 25) {
-        var resultDiv = document.getElementById("result")
-        resultDiv.innerText = "You have a healthy weight. Keep up!"
-        resultDiv.className = "normalWeightResult"
+        setResultText(String.fromCodePoint(0x2705) + " " + "You have a healthy weight. Keep up!", "normalWeightResult")
     }
     else if (BMI < 30) {
-        var resultDiv = document.getElementById("result")
-        resultDiv.innerText = "You are overweight. Please consider one of our tailored diet plans."
-        resultDiv.className = "overweightResult"  
+        setResultText(String.fromCodePoint(0x1F6D1) + " " + "You are overweight. Please consider one of our tailored diet plans.", "overweightResult"  )
     }
     else {
-        var resultDiv = document.getElementById("result")
-        resultDiv.innerText = "You are obese. Please check out one of our tailored diet plans. If you would like to contact one of our specialists, here's a 15% voucher for the first 3 sessions."
-        resultDiv.className = "obeseResult"
+        setResultText(String.fromCodePoint(0x1F974) + " " + "You are obese. Please check out one of our tailored diet plans. If you would like to contact one of our specialists, here's a 15% voucher for the first 3 sessions.", "obeseResult")
     }
+}
+
+function setResultText(resultText, className) {
+    var resultDiv = document.getElementById("result")
+    resultDiv.innerText = resultText
+    resultDiv.className = className
 }
