@@ -6,26 +6,33 @@
 <body>
     <h1>Welcome to our friendly neighbourhood BMI calculator!</h1>
     <h2>Do you think you may be fat? No need to sweat over it anymore! Find out for free below:</h2>
-    <p>First choose which unit system you'd like to use:</p>
-    <div class = "radio">
-        <input type = "radio" name = "chosenUnitSystem" value = "metric" id = "metric" onclick = "addMetricText()" checked = "true" />Metric system
-        <input type = "radio" name = "chosenUnitSystem" value = "imperial" id = "imperial" onclick = "addImperialText()" />Imperial system
-    </div>
-    <div class = "requestWH">
-        <p id = "weightText">Enter your weight here (in kilograms):</p>
-        <div class = "input">
-            <input type = "text" name = "weight" id = "weight" />
+    <div class = "container">
+        <div class = "subcontainer1">
+            <img src = "guinea-pig.jpg" width = "400px">
         </div>
-        <br>
-    </div>
-    <div class = "requestWH">
-        <p id = "heightText">Enter your height here (in meters):</p>
-        <div class = "input">
-            <input type= "text" name = "height" id = "height" />
+        <div class = "subcontainer2">
+            <p>First choose which unit system you'd like to use:</p>
+            <div class = "radio">
+                <input type = "radio" name = "chosenUnitSystem" value = "metric" id = "metric" onclick = "addMetricText()" checked = "true" />Metric system
+                <input type = "radio" name = "chosenUnitSystem" value = "imperial" id = "imperial" onclick = "addImperialText()" />Imperial system
+            </div>
+            <div class = "requestWH">
+                <p id = "weightText">Enter your weight here (in kilograms):</p>
+                <div class = "input">
+                    <input type = "text" name = "weight" id = "weight" />
+                </div>
+                <br>
+            </div>
+            <div class = "requestWH">
+                <p id = "heightText">Enter your height here (in meters):</p>
+                <div class = "input">
+                    <input type= "text" name = "height" id = "height" />
+                </div>
+            </div>
+            <div id = "submit">
+                <input type = "submit" name = "submit" onclick="unitChoice()" />
+            </div>
         </div>
-    </div>
-    <div id = "submit">
-        <input type = "submit" name = "submit" onclick="unitChoice()" />
     </div>
     <div id = "result"></div>
 </body>

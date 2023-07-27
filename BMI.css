@@ -18,16 +18,12 @@ p {
     text-align: center;
 }
 
-button {
-    background: rgb(250, 248, 233);
+.container {
+    display: flex;
 }
 
-button:hover {
-    cursor: pointer;
-}
-
-button:focus {
-    background: rgb(250, 238, 148);
+.subcontainer2 {
+    margin-left: 35px;
 }
 
 .radio {
