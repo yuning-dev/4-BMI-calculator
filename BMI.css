@@ -66,6 +66,7 @@ p {
 
 [type = "submit"]:hover {
     cursor: pointer;
+    background: rgb(220, 255, 246);
 }
 
 #result {
