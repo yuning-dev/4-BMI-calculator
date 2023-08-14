@@ -73,11 +73,11 @@ function roundAndTidy() {
 function imperial() {
     addImperialText()
     metricToImperial()
-    roundTo2Decimals()
+    roundAndTidy()
 }
 
 function metric() {
     addMetricText()
     imperialToMetric()
-    roundTo2Decimals()
+    roundAndTidy()
 }
